@@ -1,0 +1,7 @@
+delete_merged_file: true
+book_filename: CCSA_v3COVID_mockup
+output_dir: docs
+rmd_files:
+  - index.Rmd
+  - contrib/ecb.Rmd
+  - contrib/wbg.Rmd

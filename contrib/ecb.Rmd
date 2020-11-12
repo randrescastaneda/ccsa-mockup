@@ -1,0 +1,71 @@
+# ECB: Increase of the Pandemic Emergency Purchase Programme #
+
+**In crisis times there is even more a need for high-quality data to be available on a
+timely basis. The European Central Bank (ECB) and the national central banks (NCBs)
+offer assistance to reporting agents to ensure that data remains fit for purpose.
+The European Central Bank has introduced a Pandemic Emergency Purchase Programme
+(PEPP) to support the euro area banking sector, firms and households through the
+COVID-19 crisis.**
+
+```{r ecb-1, tab.cap='Purchases under the PEPP (Euro millions)'}
+kable( read.csv('data/ecb-1.csv'),
+       col.names=c('2020', 'Monthly Net Purchases'),
+       format.args=list(big.mark=','),
+       caption='Purchases under the PEPP (Euro millions)',
+       position='H') %>%
+kable_styling(full_width = FALSE)
+
+```
+
+```{r ecb-2, tab.cap='Breakdown of cumulative net purchases under the PEPP'}
+kable( read.csv('data/ecb-2.csv'),
+       col.names=c('Mar-May 2020', 'Euro millions'),
+       format.args=list(big.mark=','),
+       caption='Breakdown of cumulative net purchases under the PEPP',
+       position='H') %>%
+kable_styling(full_width = FALSE)
+
+```
+
+Despite the current coronavirus pandemic, the ECB is
+determined to continue collecting data on a timely basis and of
+a quality that is fit for purpose. This will allow the ECB to have
+the necessary statistical information at its disposal to adjust all
+of its measures, should this be needed, to safeguard liquidity
+conditions in the banking system and to ensure the smooth
+transmission of its monetary policy.
+
+This statistical information contributes to the maintenance of
+price stability and the smooth conduct of policies pursued
+by the competent authorities responsible for the supervision
+and resolution of financial institutions, for markets and
+infrastructures, and for the stability of the financial system.
+
+Many reporting agents have adopted remote working
+arrangements. Meanwhile, the continuity and quality of
+statistical information reporting may be challenged by the
+exceptional circumstances surrounding the performance of
+day-to-day operations underlying the statistical reporting.
+The ECB has therefore invited the national central banks
+and reporting agents to find pragmatic solutions within the
+existing legal framework to keep data reporting within limits
+that are manageable for reporting agents, while maintaining
+the quality of the statistical information at a sufficiently high
+level.
+
+In case of difficulties, reporting agents are asked to contact
+their national central banks and the ECB for assistance. The
+ECB and the national central banks cooperate closely with
+other European institutions and bodies. Together with the
+reporting agents, the ECB will rise to these unprecedented
+challenges, thus ensuring that the data and statistics required
+to support the necessary policy measures are fit for purpose.
+
+#### Sources #### {-}
+
+* [Statistical Data Warehouse](https://sdw.ecb.europa.eu/) website
+* [Statistics webpage on ECB website](https://www.ecb.europa.eu/stats/html/index.en.html)
+* [Euro area statistics](https://www.euro-area-statistics.org/) website
+* [ECB](https://www.ecb.europa.eu/home/html/index.en.html) and [SSM](https://www.bankingsupervision.europa.eu/home/html/index.en.html) websites
+
+![](logos/ecb.png){width=25%}

@@ -1,0 +1,56 @@
+---
+site: bookdown::bookdown_site
+title: "How COVID-19 Is Changing the World: a Statistical Perspective Volume III"
+# documentclass options: book, memoir, amsbook, scrbook
+documentclass: scrbook
+classoption: openany
+colorlinks: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, fig.pos="H", out.extra = "")
+
+library(knitr)
+library(rmarkdown)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(kableExtra)
+```
+
+# Foreword #
+
+This is a demonstration document to show how to produce an automated report
+given chapters in Markdown format and data in CSVs. For demonstration effect
+it reproduces two chapters from the [2nd edition of the CCSA's COVID Statistics Report][covid2]: the ECB contribution (16th page in the PDF), and the World
+Bank contribution (32nd page in the PDF).
+
+[covid2]: https://unstats.un.org/unsd/ccsa/documents/covid19-report-ccsa_vol2.pdf
+
+# Contributing Organizations #
+
+* European Central Bank (ECB)
+* World Bank Group (WBG)
+
+
+
+# Introduction #
+
+We are pleased to present the third volume of “How COVID-19 is
+changing the world: a statistical perspective”.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper vehicula lacinia. Maecenas hendrerit blandit nulla, quis dignissim odio euismod et. Donec vulputate nisl quis convallis bibendum. Fusce ac nulla venenatis, elementum neque ac, convallis lacus. In varius commodo magna, eget elementum metus. Quisque vehicula libero nisl, quis rutrum leo maximus eu. Ut hendrerit lorem velit, id faucibus tortor commodo imperdiet. Ut nec lorem eget tortor finibus tincidunt vel nec lacus.
+
+Curabitur mauris elit, finibus ut dui ac, tempor interdum quam. Cras dignissim rutrum erat, et congue erat tincidunt fermentum. Nulla iaculis ac tortor sit amet suscipit. Nunc tortor lectus, gravida eu nisl nec, porttitor pellentesque justo. Donec massa augue, pretium ac justo in, sagittis volutpat urna. Etiam dignissim orci lectus, nec posuere ligula porta nec. Nunc at ligula eget lorem congue eleifend. Nunc erat dolor, egestas at rhoncus vel, dapibus ac felis.
+
+Pellentesque pellentesque fermentum lorem. In sollicitudin vulputate libero. Sed posuere scelerisque accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam neque eros, dapibus eu consectetur quis, pulvinar pellentesque risus. Etiam rhoncus sit amet felis sed tristique. Donec vel justo nec risus facilisis sollicitudin. Donec congue, ex vitae finibus interdum, nunc arcu fringilla nunc, sit amet convallis sem risus eget nisi. Morbi sodales congue vulputate. Sed sed maximus nunc, vel lobortis libero. Suspendisse lacus libero, malesuada vitae felis faucibus, bibendum ultrices orci. Etiam egestas sed nisl ut faucibus. Nunc id blandit quam, sit amet tincidunt purus. Proin et arcu vitae turpis dictum pretium. Praesent a orci placerat, sollicitudin nulla et, pellentesque odio.
+
+Angela Me\
+Chief, Research and Trend Analysis Branch\
+UNODC\
+Co-chair CCSA
+
+Haishan Fu\
+Director, Development Data Group\
+World Bank\
+Co-chair CCSA

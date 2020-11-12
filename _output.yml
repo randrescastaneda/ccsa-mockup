@@ -1,0 +1,28 @@
+
+# HTML options
+bookdown::html_book:
+  # possible themes: default, cerulean, journal, flatly, darkly, readable, spacelab
+  # united, cosmo, lumen, paper, sandstone, simplex, yeti
+  theme: cerulean
+  number_sections: no
+
+bookdown::gitbook:
+  number_sections: no
+
+bookdown::tufte_html_book:
+  number_sections: no
+  css:
+    - html-parts/dropdown.css
+  includes:
+    in_header: html-parts/headers.html
+
+bookdown::pdf_book:
+  number_sections: no
+  keep_tex: true
+  includes:
+    in_header: latex-setup.sty
+  pandoc_args: --top-level-division=chapter
+
+# hrbrthemes::ipsum_pdf: default
+
+# bookdown::tufte_book2: default - NOT WORKING
