@@ -27,6 +27,10 @@ kable_styling(full_width = FALSE)
 
 ```
 
+```{=latex}
+\begin{multicols}{2}[ ]
+```
+
 Despite the current coronavirus pandemic, the ECB is
 determined to continue collecting data on a timely basis and of
 a quality that is fit for purpose. This will allow the ECB to have
@@ -60,6 +64,10 @@ other European institutions and bodies. Together with the
 reporting agents, the ECB will rise to these unprecedented
 challenges, thus ensuring that the data and statistics required
 to support the necessary policy measures are fit for purpose.
+
+```{=latex}
+\end{multicols}
+```
 
 #### Sources #### {-}
 

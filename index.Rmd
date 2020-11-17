@@ -3,7 +3,15 @@ site: bookdown::bookdown_site
 title: "How COVID-19 Is Changing the World: a Statistical Perspective Volume III"
 # documentclass options: book, memoir, amsbook, scrbook
 documentclass: scrbook
-classoption: openany
+classoption:
+ - openany
+ 
+papersize: letter
+margin-left: 1.25in
+margin-right: 1.25in
+margin-top: 1.25in
+margin-bottom: 1.25in
+
 colorlinks: true
 ---
 
