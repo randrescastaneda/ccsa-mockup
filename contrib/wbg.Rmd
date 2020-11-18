@@ -67,7 +67,6 @@ into poverty.
 
 ```{r wbg-2, fig.cap='The regional distribution of the COVID-19-induced poor'}
 
-df = read.csv('data/wbg-1.csv', check.names=FALSE) %>% gather(scenario, value, !Year)
 df = read.csv('data/wbg-2.csv', check.names=FALSE) %>%
       rename(povline='Poverty line in PPP$ (per capita per day)', projection='Years of GDP data used for growth projections') %>%
       select(!povline) %>%
