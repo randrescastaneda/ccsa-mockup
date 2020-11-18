@@ -33,7 +33,7 @@ library(kableExtra)
 This is an experimental project to produce a "digital first" companion to the
 *How COVID-19 Is Changing the World* series of reports from the [CCSA][ccsa].
 The aspirations are to: produce an interactive, engaging product with each
-participant contributing its own source code and data; explore innovative
+member contributing its own source code and data; explore innovative
 new ways of using data science tools for communication and collaboration;
 demonstrate the potential of open data, open code, and reproducible research, and;
 learn from our shared knowledge and experimentation.
