@@ -1,0 +1,2 @@
+fig:wbg-1
+fig:wbg-2

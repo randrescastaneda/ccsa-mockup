@@ -1,5 +1,11 @@
 # World Bank: COVID-19 pushing 71 to 100 million people into extreme poverty #
 
+<!-- 
+If separate preprocessing is required in STATA, include instructions here;
+.do files can be included in the /contrib directory.
+-->
+
+
 **COVID-19 is taking its toll on the world, causing deaths, illnesses and economic
 despair. This contribution suggests that COVID-19 is pushing about 71 to 100 million
 people into extreme poverty, and that South Asia and Sub-Saharan Africa might be the
@@ -9,7 +15,7 @@ regions hardest hit.**
 
 df = read.csv('data/wbg-1.csv', check.names=FALSE) %>% gather(scenario, value, !Year)
 
-ggplot(df, aes(x=Year, y=value, group=scenario)) +
+viz = ggplot(df, aes(x=Year, y=value, group=scenario)) +
   geom_line(aes(color=scenario), size=1) + 
   geom_point(aes(color=scenario)) + 
   labs(x="", y="Millions of poor") +
@@ -17,6 +23,8 @@ ggplot(df, aes(x=Year, y=value, group=scenario)) +
   scale_y_continuous(breaks=seq(550,750, by=20), limits=c(550,750)) +
   theme(legend.position="bottom", legend.title=element_blank())
 
+ggplotly(viz, tooltip=c('scenario', 'Year', 'value')) %>%
+  layout(legend=list(orientation='h', x=0, y=-0.1))
 ```
 
 ```{=latex}
@@ -72,11 +80,13 @@ df = read.csv('data/wbg-2.csv', check.names=FALSE) %>%
       select(!povline) %>%
       gather(region, value, !projection)
 
-ggplot(df, aes(x=forcats::fct_rev(projection), y=value, fill=region)) +
+viz = ggplot(df, aes(x=forcats::fct_rev(projection), y=value, fill=region)) +
   geom_bar(stat='identity', position=position_dodge()) + coord_flip() +
   labs(y='Millions of poor added to extreme poverty', x='') +
   theme(legend.position='bottom', legend.title=element_blank())
 
+ggplotly(viz) %>%
+  layout(legend=list(orientation='h', x=0, y=-0.2))
 ```
 
 #### Sources #### {-}
